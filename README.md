@@ -15,5 +15,9 @@ Results of subdomains can be saved in `txt` file
 # Video
 
 
-https://github.com/daniisaahir/DinoSub/assets/131199603/e964b676-70f2-4489-8395-fa5d14a8f8ff
+
+
+https://github.com/daniisaahir/DinoSub/assets/131199603/ba229b9d-7e6b-4e0e-a7f4-75d6dcc2100e
+
+
 
