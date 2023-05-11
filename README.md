@@ -1,5 +1,5 @@
 # DinoSub
-Subdomains finder written in Python
+Subdomains scanner written in Python
 
 # Requirements
 • Python
