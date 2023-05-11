@@ -8,3 +8,6 @@ Subdomains finder written in Python
 
 # Usage
 `python dinosub.py`
+
+# Feature
+Results of subdomains can be saved in `txt` file
