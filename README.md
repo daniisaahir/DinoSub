@@ -11,3 +11,9 @@ Subdomains finder written in Python
 
 # Feature
 Results of subdomains can be saved in `txt` file
+
+# Video
+
+
+https://github.com/daniisaahir/DinoSub/assets/131199603/e964b676-70f2-4489-8395-fa5d14a8f8ff
+
