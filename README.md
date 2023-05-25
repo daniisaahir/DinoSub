@@ -20,4 +20,5 @@ DinoSub is a Python tool that scans subdomains of any website and saves the resu
 
 
 # Screenshot
-![Screenshot_20230512-020207](https://github.com/daniisaahir/DinoSub/assets/131199603/780f5553-c2b2-4a1d-aad3-cbf071498c38)
+![Screenshot_20230525-232826](https://github.com/daniisaahir/DinoSub/assets/131199603/a752a8f3-711a-4a48-b9cc-8f6dc0c4d19d)
+
