@@ -46,7 +46,7 @@ function saveSubdomainsToFile(subdomains, filename) {
 
 async function main() {
   clearTerminal();
-  console.log('DinoSub\nAuthor: https://github.com/daniisaahir\n');
+  console.log('DinoSub (Node.js)\nAuthor: https://github.com/daniisaahir\n');
 
   try {
     await executeCommand('npm list isomorphic-fetch');
