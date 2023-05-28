@@ -21,7 +21,7 @@ def save_subdomains_to_file(subdomains, filename):
 def main():
     install_required_modules()
     clear_terminal()
-    print("DinoSub\nAuthor: https://github.com/daniisaahir\n")
+    print("DinoSub (Python)\nAuthor: https://github.com/daniisaahir\n")
     domain = input("Target Domain: ")
     subdomains = Pool().submit(get_subdomains, domain).result()
     print(f"Subdomains found: {len(subdomains)}\n{'-' * 36}")
