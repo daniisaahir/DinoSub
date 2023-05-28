@@ -1,7 +1,7 @@
 # DinoSub
 
 
-DinoSub is a tool that scans subdomains of any website and saves the results to a `txt` file. It can be used by security professionals and website owners to identify potential security risks. It uses the crt.sh website to request results.
+DinoSub is a tool that scans subdomains of any website and saves the results to a `txt` file. It can be used by security professionals and website owners to identify potential security risks. It uses the `crt.sh` website to request results.
 
 # Requirements
 •Node.js, PHP or Python
