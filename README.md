@@ -23,7 +23,7 @@ For Python
 
 `python dinosub.py`
 
-For pip package
+For pip package (Easiest installation)
 
 `pip install dinosub`
 
