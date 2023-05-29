@@ -3,6 +3,7 @@ const readline = require('readline');
 const { promisify } = require('util');
 const { exec } = require('child_process');
 const fetch = require('isomorphic-fetch');
+const path = require('path');
 
 const executeCommand = promisify(exec);
 
@@ -24,11 +25,6 @@ function prompt(question) {
   });
 }
 
-async function installDependencies() {
-  const command = 'npm install isomorphic-fetch';
-  await executeCommand(command);
-}
-
 async function getSubdomains(domain) {
   const response = await fetch(`https://crt.sh/?q=%.${domain}&output=json`);
   if (response.ok) {
@@ -39,21 +35,16 @@ async function getSubdomains(domain) {
 }
 
 function saveSubdomainsToFile(subdomains, filename) {
-  const folderPath = './subdomains';
+  const folderPath = path.join(__dirname, 'subdomains');
   fs.mkdirSync(folderPath, { recursive: true });
-  fs.writeFileSync(`${folderPath}/${filename}`, [...subdomains].join('\n'));
+  const filePath = path.join(folderPath, filename);
+  fs.writeFileSync(filePath, [...subdomains].join('\n'));
+  return path.resolve(filePath);
 }
 
 async function main() {
   clearTerminal();
-  console.log('DinoSub (Node.js)\nAuthor: https://github.com/daniisaahir\n');
-
-  try {
-    await executeCommand('npm list isomorphic-fetch');
-  } catch (error) {
-    console.log('Required dependencies not found. Installing...');
-    await installDependencies();
-  }
+  console.log('DinoSub (Node.js) v1.2.1\nAuthor: https://github.com/daniisaahir\n');
 
   const domain = await prompt('Target Domain: ');
   const subdomains = await getSubdomains(domain);
@@ -64,8 +55,8 @@ async function main() {
   if (saveResults === 'y') {
     const filename = await prompt('Filename: ');
     const validFilename = filename.endsWith('.txt') ? filename : `${filename}.txt`;
-    saveSubdomainsToFile(subdomains, validFilename);
-    console.log(`Saved to subdomains/${validFilename}.`);
+    const savedFilePath = saveSubdomainsToFile(subdomains, validFilename);
+    console.log(`Saved to: ${savedFilePath}`);
   }
 }
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DinoSub (PHP)</title>
+  <title>DinoSub (PHP) v1.2.1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -113,7 +113,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>DinoSub (PHP)</h1>
+    <h1>DinoSub (PHP) v1.2.1</h1>
     <p style="text-align: center;">
       Author: <a href="https://github.com/daniisaahir" class="author-link">https://github.com/daniisaahir</a>
     </p>
