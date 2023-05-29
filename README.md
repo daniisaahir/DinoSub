@@ -12,14 +12,19 @@ DinoSub is a tool that scans subdomains of any website and saves the results to 
 For PHP just install anywhere
 
 For Node.js 
+
 `npm install isomorphic-fetch`
+
 `node dinosub.js`
 
 For Python
+
 `pip install requests`
+
 `python dinosub.py`
 
 For pip package
+
 `pip install dinosub`
 
 # Feature
