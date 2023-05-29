@@ -4,20 +4,27 @@
 DinoSub is a tool that scans subdomains of any website and saves the results to a `txt` file. It can be used by security professionals and website owners to identify potential security risks. It uses the `crt.sh` website to request results.
 
 # Requirements
-•Node.js, PHP or Python
+•Node.js, PHP, Python, pip
 
 
 
 # Usage
 For PHP just install anywhere
 
-For Node.js `node dinosub.js`
+For Node.js 
+`npm install isomorphic-fetch`
+`node dinosub.js`
 
-For Python `python dinosub.py`
+For Python
+`pip install requests`
+`python dinosub.py`
+
+For pip package
+`pip install dinosub`
 
 # Feature
 
-*The script will automatically install all required modules (Node.js and Python)
+
 
 *Results of subdomains can be saved in `txt` file (Except for PHP, you can copy results)
 
