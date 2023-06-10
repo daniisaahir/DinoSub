@@ -26,6 +26,7 @@ For Python
 For pip package (Easiest installation)
 
 `pip install dinosub`
+
 To use just type `dinosub` in terminal
 
 # Feature
